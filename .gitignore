@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+
+# gridsome
+
+.cache
+.DS_Store
+src/.temp
+dist
+.env.*
