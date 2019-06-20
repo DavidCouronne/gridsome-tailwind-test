@@ -1,5 +1,5 @@
 <template>
-  <div class="layout bg-background-primary" :class="theme">
+  <div class="layout bg-background-primary text-primary" :class="theme">
     <header class="header">
       <strong>
         <g-link to="/">{{ $static.metaData.siteName }}</g-link>
@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      theme: 'theme-light',
+      theme: 'theme-vuepress',
     }
   },
 }

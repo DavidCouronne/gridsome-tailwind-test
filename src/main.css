@@ -4,6 +4,13 @@
 
 @tailwind utilities;
 
+.theme-vuepress {
+    --accent-color: #3eaf7c;
+    --text-color: #2c3e50;
+    --border-color: #eaecef;
+    --code-bg-color: #282c34;
+    --arrow-bg-color: #ccc;
+}
 .theme-light {
     --bg-background-primary: white;
     --bg-background-secondary: #f7fafc;
