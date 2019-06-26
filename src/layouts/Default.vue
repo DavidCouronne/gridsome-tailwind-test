@@ -1,6 +1,6 @@
 <template>
-  <div class="layout bg-background-primary text-primary" :class="theme">
-    <header class="header">
+  <div class="container px-5 bg-background-primary text-primary md:text-xl" :class="theme">
+    <header class="flex justify-between items-center mb-5 h-12 border-b border-primary">
       <strong>
         <g-link to="/">{{ $static.metaData.siteName }}</g-link>
       </strong>
@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       isOpen: false,
-      theme: 'theme-vuepress',
+      theme: 'theme-dark',
     }
   },
 }

@@ -13,7 +13,7 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'Gridsome Tailwind Test',
+  siteName: 'Gridsome Tailwind Blog Starter',
   siteDescription: 'David Couronné',
   plugins: [],
   css: {

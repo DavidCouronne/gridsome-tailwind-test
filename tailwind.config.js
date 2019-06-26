@@ -1,14 +1,18 @@
 module.exports = {
   theme: {
+    borderColor: {
+      'primary': 'var(--border-color)',
+    },
     extend: {},
     colors: {
       background: {
-        primary: 'var(--bg-background-primary)',
-        secondary: 'var(--bg-background-secondary)',
-        tertiary: 'var(--bg-background-tertiary)',
+        primary: 'var(--bg-color)',
+        content: 'var(--bg-content-color)',
+        code: 'var(--bg-code)',
       },
-      accent: 'var(--accent-color)',
-      primary: 'var(--text-color)',
+      primary: 'var(--body-color)',
+      link: 'var(--link-color)',
+      title: 'var(--title-color)'
     }
   },
   variants: {},

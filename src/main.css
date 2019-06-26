@@ -1,54 +1,47 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
 
-.theme-vuepress {
-    --accent-color: #3eaf7c;
-    --text-color: #2c3e50;
-    --border-color: #eaecef;
-    --code-bg-color: #282c34;
-    --arrow-bg-color: #ccc;
-}
-.theme-light {
-    --bg-background-primary: white;
-    --bg-background-secondary: #f7fafc;
-    --bg-background-tertiary: #e2e8f0;
-  
-    --bg-background-form: white;
-  
-    --text-copy-primary: #2d3748;
-    --text-copy-secondary: #4a5568;
-  
-    --border-border-color-primary: white;
-  
-    --accent-color: #0086e6;
-  }
 
-body {
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    margin:0;
-    padding:0;
-    line-height: 1.5;
-    background-color: var(--accent-color);
-  }
-  
-  .layout {
-    max-width: 760px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 80px;
-  }
-  
-  .nav__link {
-    margin-left: 20px;
-  }
+.theme-vuepress {
+  --link-color: #3eaf7c;
+  --body-color: #2c3e50;
+  --border-color: #eaecef;
+  --bg-code: #282c34;
+  --arrow-bg-color: #ccc;
+}
+
+.theme-light {
+  --bg-color: #F3F7F9;
+  --bg-content-color: #fff;
+  --bg-code: #fffbf3;
+  --body-color: #444;
+  --title-color: #111;
+  --link-color: #6b17e6;
+  --border-color:  rgba(0,0,0,.1);
+}
+
+.theme-dark {
+  --bg-color: #0D2538;
+  --bg-content-color: #0f2d44;
+  --bg-code: rgba(0,0,0,.3);
+  --border-color:  rgba(255,255,255,.1);
+  --body-color: #ced8de;
+  --title-color: #fff;
+  --link-color: #af9cef;
+}
+
+.nav__link {
+  margin-left: 20px;
+}
+
+a:not(.button) {
+  color: var(--link-color);
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+a:not(.button):hover {
+  opacity: .8;
+}
+/*# sourceMappingURL=main.css.map */
